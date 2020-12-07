@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <span>Teacher's Feedback App</span>
+</mat-toolbar>
+<div>
+    <form>
+        <div class = "feedback_input">
+            <div class = "feedback_name">
+                <p>Enter Teacher's name: </p>
+                <input [(ngModel)] = "teacher_name" placeholder="Add Teacher" name="teacher_name">
+            </div>
+            <div class = feedback_scale>
+                <br><label for="subknow">Subject Knowledge (1: Low to 5 :High)</label><br>
+                <input [(ngModel)] = "subknow" placeholder = "Number from 1 to 5" name="subknow">
+                <br><label for="quainst">Quality of Instruction (1: Low to 5 :High)</label><br>
+                <input [(ngModel)] = "quainst" placeholder = "Number from 1 to 5" name="quainst">
+                <br><label for="creativity">Creativity (1: Low to 5 :High)</label><br>
+                <input [(ngModel)] = "creativity" placeholder = "Number from 1 to 5" name="creativity">
+                <br><label for="approach">Approachable (1: Low to 5 :High)</label><br>
+                <input [(ngModel)] = "approach" placeholder = "Number from 1 to 5" name="app">
+            </div>
+            <br><button type="submit" (click) = "onSubmit()">Add Feedback</button>
+        </div>
+    </form>
+</div>
